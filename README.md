@@ -1,6 +1,17 @@
 # NYP-Dance-Club-Website
 A multi-page website developed as a group project for the UX Design module at Nanyang Polytechnic. The website was designed to promote the NYP Dance Club by providing prospective members with information about the club, upcoming events, membership, and contact details through an intuitive and visually engaging user experience.
 
+## Website Preview
+
+### Homepage
+![Homepage](screenshots/homepage-page.png)
+
+### About Us
+![About Us](screenshots/aboutus-page.png)
+
+### Events
+![Events](screenshots/events-page.png)
+
 ## My Contributions
 - Developed the **Homepage** with a prominent call-to-action to encourage club sign-ups and clearly communicate the club's purpose.
 
