@@ -1,0 +1,186 @@
+/* This CSS is done by: Huang Ru Yi Lily & Alyssa Kwok Xuan Hui */
+/* This is the CSS for the elements that have the same CSS for all pages. */
+
+/* Shared custom colours */
+#text-danger-dark {
+    color: #FF002D;
+}
+
+/* Layout */
+.custom-hr {
+    border: none;
+    height: 2px;
+    background-image: linear-gradient(90deg, #980000, #d14a6c, #ce1e70, #ff2247);
+    opacity: 0.7;
+}
+
+.custom-section {
+    background-image: linear-gradient(90deg, #ffebeb, #ffcbd8);
+}
+
+.custom-div {
+    width: 60%;
+}
+
+/* Navbar*/
+.navbar-toggler:hover,
+.navbar-toggler.active {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.navbar-toggler {
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.navbar {
+    background-image: linear-gradient(90deg, #980000, #d14a6c);
+}
+
+.custom-nav,
+.custom-nav-active {
+    transition: background-color 0.3s ease;
+}
+
+.custom-nav:hover {
+    background-color: white !important;
+}
+
+.custom-nav:hover .custom-navbtn,
+.custom-cca-name:hover {
+    background-image: linear-gradient(270deg, #9C4F96, #2AA8F2, #8BD448, #FF6355, #FAE442, #FBA949);
+    background-size: 800% 800%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #980000;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    text-decoration: underline !important;
+}
+
+.footer-icon {
+    transform: scale(1.5) !important;
+    color: white !important;
+}
+
+
+.custom-a:hover {
+    background-image: linear-gradient(270deg, #9C4F96, #2AA8F2, #8BD448, #FF6355, #FAE442, #FBA949);
+    background-size: 800% 800%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite;
+}
+
+
+/* Table */
+th {
+    background-color: #da214f !important;
+    color: white !important;
+}
+
+/* Button */
+.allbtn {
+    transition: transform 0.2s ease, box-shadow 0.3s ease !important;
+}
+
+.allbtn:hover {
+    transform: translateY(-2px) !important;
+}
+
+.allbtn:active {
+    transform: translateY(0) !important;
+}
+
+.custom-btn:hover {
+    background-image: linear-gradient(270deg, #9C4F96, #2AA8F2, #8BD448, #FF6355, #FAE442, #FBA949);
+    background-size: 800% 800%;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    animation: gradientMove 3s linear infinite;
+}
+
+/* Breadcrumb */
+.breadcrumb-item a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, text-decoration-color 0.25s ease;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #FAE442;
+    color: #FAE442;
+}
+
+/* Form */
+#loadingOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(2px);
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#loadingOverlay.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    user-select: auto;
+}
+
+#spinner {
+    width: 5rem;
+    height: 5rem;
+    border-width: 0.5rem;
+}
+
+#tickIcon {
+    font-size: 5rem;
+    display: none;
+    animation: tickFadeIn 0.4s forwards;
+}
+
+@keyframes tickFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

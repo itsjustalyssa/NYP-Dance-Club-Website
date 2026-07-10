@@ -1,0 +1,23 @@
+/* This CSS is done by: Alyssa Kwok Xuan Hui */
+/* This is the CSS for the Homepage page. */
+
+#gradient-text {
+    background-image: linear-gradient(90deg, #980000, #d14a6c, #ce1e70, #ff2247);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-hp {
+    right: 8%;
+    top: 50%;
+}
+
+@media (max-width: 768px) {
+  .custom-hp {
+    position: static !important;
+    transform: none !important;
+    padding-top: 1rem;
+  }
+}

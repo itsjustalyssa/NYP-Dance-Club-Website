@@ -1,0 +1,188 @@
+<!-- This page is done by: Alyssa Kwok Xuan Hui -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NYP Dance Club - Homepage</title>
+
+    <!-- Bootstrap CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css_stylesheets/general.css">
+    <link rel="stylesheet" href="../css_stylesheets/homepage.css">
+
+    <!-- Javascript -->
+    <script src="../javascript/homepage.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm px-3">
+        <div class="container-fluid">
+            <!-- Logo + Title -->
+            <a class="navbar-brand d-flex align-items-center gap-2 text-white" href="Homepage.html">
+                <img src="../media/NYP Dance Club.jpg" alt="Club Logo" class="rounded-circle object-fit-cover logo-zoom"
+                    width="40" height="40">
+                <span class="fw-semibold text-white custom-cca-name">NYP Dance Club</span>
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler bg-light shadow-none border-0 rounded" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Buttons -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto d-flex flex-lg-row flex-column gap-2 mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-light fw-semibold w-100 custom-nav" href="Homepage.html"><span
+                                class="custom-navbtn">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="AboutUs.html"><span
+                                class="custom-navbtn">About Us</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="Genres.html"><span
+                                class="custom-navbtn">Genres</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="Events.html"><span
+                                class="custom-navbtn">Events</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="JoinUs.html"><span
+                                class="custom-navbtn">Join Us</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="ContactUs.html"><span
+                                class="custom-navbtn">Contact Us</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="FAQs.html"><span
+                                class="custom-navbtn">FAQs</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="position-relative d-inline-block">
+            <img src="../media/heroimage.jpg" alt="Dance performance" class="img-fluid rounded shadow" />
+
+            <div class="position-absolute translate-middle-y pe-5 text-start custom-hp">
+                <h1 id="gradient-text" class="fw-bold text-white mb-3">
+                    Your Dance Journey <br>Starts Here.
+                </h1>
+                <div>
+                    <div id="countdown" class="fs-4 fw-semibold fst-italic rounded mb-3"></div>
+                </div>
+                <a href="JoinUs.html" class="btn btn-danger fw-semibold shadow allbtn custom-btn">
+                    Register now → </a>
+                <p class="mt-2 text-dark fw-semibold mb-0">Audition Dates:</p>
+                <p>1 to 3 September 2025</p>
+            </div>
+        </div>
+
+        <hr class="custom-hr my-4">
+
+        <!-- Who are we section -->
+        <section class="mb-5">
+            <h2 class="fw-semibold text-start text-danger">Who are we?</h2>
+            <p>
+                A crew of passionate dancers who live for rhythm, movement, and self-expression. More than just a dance
+                CCA,
+                we are a group of aspiring leaders and creators, united by our love for dancing. Whether you are a
+                seasoned
+                dancer or first-timer, there's always room for you here. On and off the stage, we train hard, lift each
+                other up,
+                and grow as one.
+            </p>
+        </section>
+
+        <hr class="custom-hr my-4">
+
+        <!-- Why join us section -->
+        <section class="mb-5">
+            <h2 class="fw-semibold text-start text-danger">Why join us?</h2>
+            <p>
+                Joining us means stepping into a space where you can challenge yourself, build confidence, and make
+                lasting
+                friendships. You'll learn new skills, perform on stage, and grow as both a dancer and a teammate. We
+                offer
+                chances to lead, choreograph, and contribute to something bigger. It's not just about the moves. It's
+                about the
+                journey, the people, and the memories we create together.
+            </p>
+        </section>
+
+        <hr class="custom-hr my-4">
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center pt-4 pb-5 text-white">
+        <!-- Social icons -->
+        <div class="d-flex justify-content-center gap-4 gap-md-5 pb-3 pt-3 flex-wrap">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                class="text-white fs-4">
+                <i class="bi bi-facebook footer-icon custom-a"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                class="text-white fs-4">
+                <i class="bi bi-instagram footer-icon custom-a"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Tiktok"
+                class="text-white fs-4">
+                <i class="bi bi-tiktok footer-icon custom-a"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+                class="text-white fs-4">
+                <i class="bi bi-youtube footer-icon custom-a"></i>
+            </a>
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter X"
+                class="text-white fs-4">
+                <i class="bi bi-twitter-x footer-icon custom-a"></i>
+            </a>
+        </div>
+
+        <!-- Page links -->
+        <nav class="d-flex flex-wrap justify-content-center gap-2 gap-md-3">
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="Homepage.html">Home</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="AboutUs.html">About
+                Us</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="Genres.html">Genres</a>
+            <span>|</span>
+            <!-- Line break on small screens -->
+            <span class="w-100 d-block d-md-none"></span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="Events.html">Events</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="JoinUs.html">Join Us</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="ContactUs.html">Contact
+                Us</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="FAQs.html">FAQs</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!-- This page is done by: Huang Ru Yi Lily -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NYP Dance Club - Enquiry Form</title>
+
+    <!-- Bootstrap CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css_stylesheets/general.css">
+
+    <!-- Javascript -->
+    <script src="../javascript/faqsform.js" defer></script>
+</head>
+
+<body class="pt-5">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="d-flex">
+        <div id="spinner" class="spinner-border text-danger" role="status" aria-hidden="true"></div>
+        <div id="tickIcon" class="bi bi-check-lg text-success" aria-hidden="true"></div>
+        <div id="loadingText" class="mt-2 text-dark fw-semibold">Submitting your enquiry...</div>
+        <div id="tickText" class="mt-2 text-dark fw-semibold">Submitted successfully!</div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm px-3">
+        <div class="container-fluid">
+            <!-- Logo + Title -->
+            <a class="navbar-brand d-flex align-items-center gap-2 text-white" href="Homepage.html">
+                <img src="../media/NYP Dance Club.jpg" alt="Club Logo" class="rounded-circle object-fit-cover logo-zoom"
+                    width="40" height="40">
+                <span class="fw-semibold text-white custom-cca-name">NYP Dance Club</span>
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler bg-light shadow-none border-0 rounded" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Buttons -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto d-flex flex-lg-row flex-column gap-2 mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="Homepage.html"><span
+                                class="custom-navbtn">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="AboutUs.html"><span
+                                class="custom-navbtn">About Us</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="Genres.html"><span
+                                class="custom-navbtn">Genres</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="Events.html"><span
+                                class="custom-navbtn">Events</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="JoinUs.html"><span
+                                class="custom-navbtn">Join Us</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light fw-semibold w-100 custom-nav" href="ContactUs.html"><span
+                                class="custom-navbtn">Contact Us</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-light fw-semibold w-100 custom-nav" href="FAQs.html"><span
+                                class="custom-navbtn">FAQs</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <!-- Breadcrumb -->
+        <nav class="mb-3"
+            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb fs-5">
+                <li class="breadcrumb-item position-relative"><a href="Homepage.html"
+                        class="text-danger custom-a">Home</a></li>
+                <li class="breadcrumb-item position-relative"><a href="FAQs.html" class="text-danger custom-a">FAQs</a>
+                </li>
+                <li class="breadcrumb-item position-relative active" aria-current="page"><a href="FAQsForm.html"
+                        class="text-dark custom-a">Enquiry Form</a></li>
+            </ol>
+        </nav>
+
+        <!-- FAQs form page header -->
+        <header class="text-center mb-4">
+            <h1 class="fw-bold" id="text-danger-dark">FAQs</h1>
+            <p class="fst-italic text-secondary">Fill in the enquiry form below to ask us a question or tell us
+                a message!</p>
+        </header>
+
+        <hr class="custom-hr my-4">
+        <!-- Enquiry form section -->
+        <section>
+            <header class="text-start mb-3">
+                <h2 class="fw-semibold text-danger">Enquiry Form</h2>
+            </header>
+            <div class="bg-white rounded shadow-sm">
+            <form target="_self" id="faqsform" class="w-75 px-4 pb-4">
+                <div id="formAlert" class="alert alert-success d-none" role="alert"></div>
+
+                <div class="mb-3">
+                    <label for="fullname" class="form-label mb-3"><strong>Full Name:</strong></label>
+                    <input type="text" name="fullname" id="fullname" class="form-control"
+                        placeholder="Enter your full name" required autocomplete="off">
+                </div>
+
+                <div class="mb-3">
+                    <label for="contact" class="form-label mb-3"><strong>Email:</strong></label>
+                    <input type="email" name="contact" id="contact" class="form-control" placeholder="Enter your email"
+                        required autocomplete="off">
+                </div>
+
+                <div class="mb-3">
+                    <label for="enquirymsg" class="form-label mb-3"><strong>Your Question(s):</strong></label>
+                    <textarea name="enquirymsg" id="enquirymsg" class="form-control" placeholder="Enter a message"
+                        required rows="3"></textarea>
+                </div>
+
+                <div class="text-start">
+                    <button type="submit" class="btn btn-danger fw-semibold custom-btn allbtn">Submit</button>
+                </div>
+            </form>
+            </div>
+        </section>
+
+        <hr class="custom-hr my-4">
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center pt-4 pb-5 text-white">
+        <!-- Social icons -->
+        <div class="d-flex justify-content-center gap-4 gap-md-5 pb-3 pt-3 flex-wrap">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                class="text-white fs-4">
+                <i class="bi bi-facebook footer-icon custom-a"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                class="text-white fs-4">
+                <i class="bi bi-instagram footer-icon custom-a"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Tiktok"
+                class="text-white fs-4">
+                <i class="bi bi-tiktok footer-icon custom-a"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+                class="text-white fs-4">
+                <i class="bi bi-youtube footer-icon custom-a"></i>
+            </a>
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter X"
+                class="text-white fs-4">
+                <i class="bi bi-twitter-x footer-icon custom-a"></i>
+            </a>
+        </div>
+
+        <!-- Page links -->
+        <nav class="d-flex flex-wrap justify-content-center gap-2 gap-md-3">
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="Homepage.html">Home</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="AboutUs.html">About
+                Us</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="Genres.html">Genres</a>
+            <span>|</span>
+            <!-- Line break on small screens -->
+            <span class="w-100 d-block d-md-none"></span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="Events.html">Events</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="JoinUs.html">Join Us</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="ContactUs.html">Contact
+                Us</a>
+            <span>|</span>
+            <a class="fw-semibold text-decoration-none text-white nav-link px-1 px-md-2 custom-a"
+                href="FAQs.html">FAQs</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

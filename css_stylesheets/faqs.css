@@ -1,0 +1,23 @@
+/* This CSS is done by: Huang Ru Yi Lily */
+/* This is the CSS for the FAQs page. */
+
+/* Dropdown Layout */
+.dropdown-toggle::after {
+    transform: rotate(0deg);
+    right: 1rem;
+    left: auto;
+    margin-left: 0;
+    margin-right: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+/* Rotate up when expanded */
+.dropdown-toggle:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+
+/* Hover effect for FAQ toggle */
+.faq-toggle:hover {
+    background-color: #cf2a3a !important;
+    transition: background-color 0.3s ease;
+}

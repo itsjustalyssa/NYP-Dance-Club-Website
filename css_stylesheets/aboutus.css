@@ -1,0 +1,104 @@
+/* This CSS is done by: Alyssa Kwok Xuan Hui */
+/* This is the CSS for the About Us page. */
+
+/* Background Story */
+#cca-intro {
+    margin-bottom: -0.5rem;
+}
+
+/* Achievements */
+#winnerpic {
+    max-width: 550px;
+}
+
+/* Custom max-width for awards list */
+.mw-600px {
+    max-width: 600px;
+}
+
+/* Awards list square bullets */
+#awardslist {
+    list-style-type: square;
+}
+
+
+/* Slide layout */
+.slide-wrapper {
+    min-height: 300px;
+    max-height: none; /* Remove height cap */
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .slide-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+
+/* Just the image itself */
+.carousel-img {
+    max-width: 100%;
+    width: 12rem;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* Text block */
+.right-block {
+    flex-grow: 1;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Image block */
+.left-block {
+    max-width: 280px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+/* Styling and Control of Carousel Indicators */
+.carousel-indicators button {
+width: 10px !important;
+height: 10px !important;
+border-radius: 50% !important;
+background-color: #999;
+border: none;
+margin: 0 4px;
+}
+
+.carousel-indicators {
+bottom: -15px;
+}
+
+.carousel-indicators .active {
+background-color: #333;
+}
+
+.carousel-control-prev {
+left: -40px;
+}
+
+.carousel-control-next {
+right: -40px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+filter: brightness(0.5);
+transition: filter 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+filter: brightness(0);
+}
