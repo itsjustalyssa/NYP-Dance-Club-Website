@@ -4,13 +4,13 @@ A multi-page website developed as a group project for the UX Design module at Na
 ## Website Preview
 
 ### Homepage 
-<img src="screenshots/homepage-page.png" width="800">
+<img src="screenshots/homepage-page.png" width="600">
 
 ### About Us Page
-<img src="screenshots/aboutus-page.png" width="800">
+<img src="screenshots/aboutus-page.png" width="600">
 
 ### Events Page
-<img src="screenshots/events-page.png" width="800">
+<img src="screenshots/events-page.png" width="600">
 
 ## My Contributions
 - Developed the **Homepage** with a prominent call-to-action to encourage club sign-ups and clearly communicate the club's purpose.
